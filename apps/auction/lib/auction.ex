@@ -16,8 +16,7 @@ defmodule Auction do
   end
 
   def insert_item(attrs) do
-    IO.inspect attrs
-    Item
+    %Item{}
     |> Item.changeset(attrs)
     |> @repo.insert()
   end
