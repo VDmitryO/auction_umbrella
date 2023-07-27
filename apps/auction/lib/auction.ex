@@ -55,7 +55,7 @@ defmodule Auction do
     end
   end
 
-  def new_bid, do: Bid.changeset(%{})
+  def new_bid, do: Bid.changeset(%Bid{})
 
   def insert_bid(params) do
     %Bid{}
