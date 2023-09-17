@@ -19,7 +19,8 @@ config :auction, Auction.Repo,
   port: "5432"
 
 config :auction_web,
-  generators: [context_app: false]
+  :generators,
+  context_app: :some_app
 
 # Configures the endpoint
 config :auction_web, AuctionWeb.Endpoint,
