@@ -46,4 +46,6 @@ defmodule AuctionWeb.Endpoint do
   plug Plug.Head
   plug Plug.Session, @session_options
   plug AuctionWeb.Router
+
+  socket "/socket", AuctionWeb.UserSocket, websocket: true
 end
